@@ -3,8 +3,8 @@
 
 <head>
    <meta charset="utf-8">
-   <title>D3 Waffle Chart</title>
-   <meta name="description" content="D3 waffle chart: vanilla JS standard">
+   <title>D3 clipped area chart</title>
+   <meta name="description" content="D3 clipped area chart: vanilla JS">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
    <style>
@@ -12,17 +12,28 @@
          font-family: 'Source Sans Pro', sans-serif;
       }
 
-      #chart {
+      #chart1 {
+         width: 100%;
          text-align: center;
+      }
+
+      .tick text {
+         font-size: 14px;
+         text-transform: uppercase;
+      }
+
+      .x-axis path,
+      .y-axis path {
+         display: none;
       }
    </style>
 </head>
 
 <body>
-   <div id="chart"></div>
+   <div id="chart1"></div>
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.2.0/d3.min.js"></script>
-   <script src="./data/sharks.js"></script>
+   <script src="./data/data.js"></script>
    <script src="./main.js"></script>
 
 </body>
